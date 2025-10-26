@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Kenzie Zubair Al Fatih - Web Developer">
+  <title>Kenzie Zubair - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="nav-container">
+        <h1 class="logo">Portfolio</h1>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu">
+          <li><a href="#beranda">HOME</a></li>
+          <li><a href="#tentang">ABOUT ME</a></li>
+          <li><a href="#projek">PROJEK</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#sertifikat">CERTIFICATE</a></li>
+          <li><a href="#kirim">MESSAGE</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="beranda" aria-label="Hero section">
+      <div class="hero-content">
+        <h2 class="hero-title">Kenzie Zubair Al Fatih</h2>
+        <p class="hero-subtitle">kenziezubair@gmail.com</p>
+        <p class="hero-description">Learn about the world of programming</p>
+        <p class="social-label">Social Media:</p>
+
+        <ul class="social-links" aria-label="Social media links">
+          <li><a href="https://wa.me/6289677524422" aria-label="WhatsApp"><img class="social-icon" src="WA.png"
+                alt="WhatsApp"></a></li>
+          <li><a href="https://www.youtube.com/@Kapektoon" aria-label="YouTube"><img class="social-icon" src="YT.png"
+                alt="YouTube"></a></li>
+          <li><a href="https://www.instagram.com/kenziezub/?hl=id" aria-label="Instagram"><img class="social-icon"
+                src="IG.png" alt="Instagram"></a></li>
+          <li><a href="https://github.com/Kenzlagibete" aria-label="GitHub"><img class="social-icon" src="Github.png"
+                alt="GitHub"></a></li>
+        </ul>
+
+        <a href="CV.pdf" download="CV_Kenzie_Zubair.pdf" class="btn-download">
+          <button type="button">Download CV</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="tentang" aria-label="About section">
+      <div class="about-container">
+        <img class="profile-image" src="kenzie 2.jpg" alt="Kenzie Zubair">
+
+        <div class="biodata-container">
+          <h2>My Biodata</h2>
+          <ul class="biodata-list">
+            <li><strong>Name:</strong> Kenzie Zubair Al Fatih</li>
+            <li><strong>Date of Birth:</strong> 18/05/2010</li>
+            <li><strong>School:</strong> SMKN 1 Surabaya</li>
+            <li><strong>Major:</strong> RPL (Rekayasa Perangkat Lunak)</li>
+            <li><strong>Email:</strong> kenziezubair@gmail.com</li>
+            <li><strong>Hobby:</strong> Listening to music, editing videos, making animation</li>
+            <li><strong>Skills:</strong> HTML, CSS, Graphic Design</li>
+            <li><strong>Languages:</strong> Indonesia, English</li>
+            <li><strong>Dream:</strong> To be a Game & Web Developer</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projek" aria-label="Projects section">
+      <h2>Projek Saya</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="Forum.png" alt="Website Forum Project">
+          <h3>Website Forum</h3>
+          <a href="https://kenzlagibete.github.io/Forum-projek-tes/" class="project-link">Lihat Projek</a>
+        </article>
+        <article class="project-card">
+          <img src="Berita.png" alt="Website Berita Project">
+          <h3>Website Berita</h3>
+          <a href="https://kenzlagibete.github.io/Berita-projek/" class="project-link">Lihat Projek</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skill" aria-label="Skills section">
+      <div class="skills-container">
+        <h3>THESE ARE SOME OF MY PROGRAMMING MARKUP SKILLS</h3>
+        <p class="skills-indicator">👇👇👇</p>
+        <div class="skills-icons">
+          <img src="html.png" alt="HTML" class="skill-icon">
+          <img src="css.png" alt="CSS" class="skill-icon">
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates" id="sertifikat" aria-label="Certificates section">
+      <h2>THIS IS MY CERTIFICATE</h2>
+      <div class="certificates-grid">
+        <article class="certificate-card">
+          <img src="sertifikat dicoding_Page_1.jpg" alt="Dicoding Certificate">
+          <h3>CERTIFICATE DICODING</h3>
+          <a href="sertifikat dicoding_Page_1.jpg" class="certificate-link">See Full Certificate</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="kirim" aria-label="Contact section">
+      <div class="contact-container">
+        <h2>Bagaimana pendapat anda tentang CV Saya??</h2>
+        <p class="contact-subtitle">Tulis kritik dan saran anda di sini</p>
+        <p class="contact-indicator">👇👇👇</p>
+
+        <form action="https://formspree.io/f/mkgvgpea" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Nama lengkap:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tulis Pesan:</label>
+            <textarea id="message" name="pesan" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Kirim</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 KENZIE ZUBAIR AL FATIH | PORTFOLIO | SMKN 1 SURABAYA</p>
+  </footer>
+</body>
+
+</html>
