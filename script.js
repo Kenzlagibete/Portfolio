@@ -48,3 +48,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+// Add current year to footer
+document.querySelector('footer p').innerHTML = 
+  `&copy; ${new Date().getFullYear()} KENZIE ZUBAIR AL FATIH | PORTFOLIO | SMKN 1 SURABAYA`;
