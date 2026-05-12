@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio Kenzie Zubair Al Fatih - Web Developer">
-  <title>Kenzie Zubair - Portfolio</title>
+  <title>Kenzie Zubair — Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-
 <body>
+
   <!-- Navbar -->
   <header>
     <nav>
       <div class="nav-container">
-        <h1 class="logo">Portfolio</h1>
-
-        <button class="mobile-menu-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
+        <div class="logo">
+          <span class="logo-b">KENZ</span>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu"><img class="foto-menu" src="Mobile menu.png"></button>
         <ul class="nav-menu">
-          <li><a href="#beranda">HOME</a></li>
-          <li><a href="#tentang">ABOUT ME</a></li>
-          <li><a href="#projek">PROJEK</a></li>
-          <li><a href="#skill">SKILL</a></li>
-          <li><a href="#sertifikat">CERTIFICATE</a></li>
-          <li><a href="#kirim">MESSAGE</a></li>
+          <li><a href="#beranda">Home</a></li>
+          <li><a href="#tentang">About</a></li>
+          <li><a href="#projek">Projects</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#sertifikat">Certificate</a></li>
+          <li><a href="#kirim">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -37,164 +32,235 @@
 
   <main>
     <!-- Hero Section -->
-    <section class="hero" id="beranda" aria-label="Hero section">
+    <section class="hero" id="beranda">
+      <div class="hero-noise"></div>
       <div class="hero-content">
-        <h2 class="hero-title">Kenzie Zubair Al Fatih</h2>
-        <p class="hero-subtitle">kenziezubair@gmail.com</p>
-        <p class="hero-description">Learn about the world of programming</p>
-        <p class="social-label">Social Media:</p>
+        <div class="hero-tag">Available for work 🟢</div>
+        <h1>I AM&nbsp;<span class="typewriter"></span></h1>
+        <p class="hero-email">kenziezubair@gmail.com</p>
+        <p class="hero-desc">Learning to build the web, one line at a time.</p>
 
-        <ul class="social-links" aria-label="Social media links">
-          <li><a href="https://wa.me/6289677524422" aria-label="WhatsApp"><img class="social-icon" src="WA.png"
-                alt="WhatsApp"></a></li>
-          <li><a href="https://www.youtube.com/@Kapektoon" aria-label="YouTube"><img class="social-icon" src="YT.png"
-                alt="YouTube"></a></li>
-          <li><a href="https://www.instagram.com/kenziezub/?hl=id" aria-label="Instagram"><img class="social-icon"
-                src="IG.png" alt="Instagram"></a></li>
-          <li><a href="https://github.com/Kenzlagibete" aria-label="GitHub"><img class="social-icon" src="Github.png"
-                alt="GitHub"></a></li>
-        </ul>
+        <div class="social-row">
+          <a href="https://wa.me/6289677524422" class="social-btn" aria-label="WhatsApp">
+            <img class="logo-sosmed" src="WA.svg" alt="WhatsApp">
+          </a>
+          <a href="https://www.youtube.com/@Kapektoon" class="social-btn" aria-label="YouTube">
+            <img class="logo-sosmed" src="YT.svg" alt="YouTube">
+          </a>
+          <a href="https://www.instagram.com/kenziezub/?hl=id" class="social-btn" aria-label="Instagram">
+            <img class="logo-sosmed" src="IG.svg" alt="Instagram">
+          </a>
+          <a href="https://github.com/Kenzlagibete" class="social-btn" aria-label="GitHub">
+            <img class="logo-sosmed" src="Github.svg" alt="GitHub">
+          </a>
+          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="social-btn" aria-label="LinkedIn">
+            <img class="logo-sosmed" src="linkedin.svg" alt="LinkedIn">
+          </a>
+        </div>
 
-        <a href="CV.pdf" download="CV_Kenzie_Zubair.pdf" class="btn-download">
-          <button type="button">Download CV</button>
+        <a href="CV.pdf" download="CV_Kenzie_Zubair.pdf" class="btn-cv">
+          Download CV <span class="btn-arrow">↓</span>
         </a>
       </div>
+
+      <div class="hero-scroll">scroll<span class="scroll-line"></span></div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="tentang" aria-label="About section">
+    <section class="about" id="tentang">
+      <div class="section-label">01 — About</div>
       <div class="about-container">
-        <img class="profile-image" src="kenzie 2.jpg" alt="Kenzie Zubair">
-
+        <div class="about-img-wrap">
+          <img class="profile-image" src="kenzie 2.jpg" alt="Kenzie Zubair">
+          <div class="img-accent"></div>
+        </div>
         <div class="biodata-container">
           <h2>My Biodata</h2>
           <ul class="biodata-list">
-            <li><strong>Name:</strong> Kenzie Zubair Al Fatih</li>
-            <li><strong>Date of Birth:</strong> 18/05/2010</li>
-            <li><strong>School:</strong> SMKN 1 Surabaya</li>
-            <li><strong>Major:</strong> RPL (Rekayasa Perangkat Lunak)</li>
-            <li><strong>Email:</strong> kenziezubair@gmail.com</li>
-            <li><strong>Hobby:</strong> Listening to music, editing videos, making animation</li>
-            <li><strong>Skills:</strong> HTML, CSS, Graphic Design</li>
-            <li><strong>Languages:</strong> Indonesia, English</li>
-            <li><strong>Dream:</strong> To be a Game & Web Developer</li>
+            <li><span class="bio-key">Name</span><span class="bio-val">Kenzie Zubair Al Fatih</span></li>
+            <li><span class="bio-key">Born</span><span class="bio-val">18 May 2010</span></li>
+            <li><span class="bio-key">School</span><span class="bio-val">SMKN 1 Surabaya</span></li>
+            <li><span class="bio-key">Major</span><span class="bio-val">RPL (Rekayasa Perangkat Lunak)</span></li>
+            <li><span class="bio-key">Email</span><span class="bio-val">kenziezubair@gmail.com</span></li>
+            <li><span class="bio-key">Hobby</span><span class="bio-val">Music · Video editing · Animation</span></li>
+            <li><span class="bio-key">Skills</span><span class="bio-val">HTML · CSS · Graphic Design</span></li>
+            <li><span class="bio-key">Languages</span><span class="bio-val">Indonesia · English</span></li>
+            <li><span class="bio-key">Dream</span><span class="bio-val">Game & Web Developer</span></li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="projects" id="projek" aria-label="Projects section">
-      <h2>Projek Saya</h2>
+    <section class="projects" id="projek">
+      <div class="section-label">02 — Projects</div>
+      <h2>My Projects</h2>
       <div class="projects-grid">
         <article class="project-card">
-          <img src="Forum.png" alt="Website Forum Project">
-          <h3>Website Forum</h3>
-          <a href="https://kenzlagibete.github.io/Forum-projek-tes/" class="project-link">Lihat Projek</a>
+          <div class="project-img">
+            <img src="Forum.png" alt="Form Website">
+            <div class="project-overlay">
+              <a href="https://kenzlagibete.github.io/Forum-projek-tes/" class="project-link" target="_blank">View Project →</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Web</span>
+            <h3>Form Website</h3>
+          </div>
         </article>
         <article class="project-card">
-          <img src="Berita.png" alt="Website Berita Project">
-          <h3>Website Berita</h3>
-          <a href="https://kenzlagibete.github.io/Berita-projek/" class="project-link">Lihat Projek</a>
+          <div class="project-img">
+            <img src="Berita.png" alt="News Website">
+            <div class="project-overlay">
+              <a href="https://kenzlagibete.github.io/Breaking-news---First-Projek/" class="project-link" target="_blank">View Project →</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Web</span>
+            <h3>News Website</h3>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-img">
+            <img src="Projek game.png" alt="Box-Jump Game">
+            <div class="project-overlay">
+              <a href="https://scratch.mit.edu/projects/1271948702" class="project-link" target="_blank">View Project →</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Game</span>
+            <h3>Box-Jump Game</h3>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-img">
+            <img src="kalkulator.png" alt="Kalkulator">
+            <div class="project-overlay">
+              <a href="https://kenzlagibete.github.io/Kalkulator/" class="project-link" target="_blank">View Project →</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">App</span>
+            <h3>Calculator</h3>
+          </div>
         </article>
       </div>
     </section>
 
     <!-- Skills Section -->
-<section class="skills" id="skill">
-  <div class="skills-container">
-    <h3>THESE ARE SOME OF MY MARKUP SKILLS</h3>
-    <p class="skills-indicator">👇👇👇</p>
+    <section class="skills" id="skill">
+      <div class="section-label">03 — Skills</div>
+      <h2>My Skills</h2>
 
-    <div class="skills-icons">
-      <div class="skill-card">
-        <img src="html.png" class="skill-icon">
-        <div class="progres">
-          <div class="progresbar" style="width: 65%;"></div>
-        </div>
-        <div class="skill-title">HTML</div>
-      </div>
-
-      <div class="skill-card">
-        <img src="css.png" class="skill-icon">
-         <div class="progres">
-          <div class="progresbar" style="width: 60%;"></div>
-        </div>
-        <div class="skill-title">CSS</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="skills-container">
-    <h3>THESE ARE SOME OF MY PROGRAMMING LANGUAGE SKILLS</h3>
-    <p class="skills-indicator">👇👇👇</p>
-
-    <div class="skills-icons">
-      <div class="skill-card">
-        <img src="Pyton.png" class="skill-icon">
-        <div class="progres">
-          <div class="progresbar" style="width: 30%;"></div>
-        </div>
-        <div class="skill-title">Python</div>
-      </div>
-
-      <div class="skill-card">
-        <img src="js.png" class="skill-icon">
-        <div class="progres">
-          <div class="progresbar" style="width: 25%;"></div>
-        </div>
-        <div class="skill-title">JavaScript</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <!-- Certificates Section -->
-    <section class="certificates" id="sertifikat" aria-label="Certificates section">
-      <h2>THIS IS MY CERTIFICATE</h2>
-      <div class="certificate-colloums">
-        <div class="certificates-grid">
-          <article class="certificate-card">
-            <img src="sertifikat dicoding_Page_1.jpg" alt="Dicoding Certificate">
-            <h3>CERTIFICATE DICODING</h3>
-            <a href="sertifikat dicoding_Page_1.jpg" class="certificate-link">See Full Certificate</a>
-          </article>
-        </div>
-      </div>
-      </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="kirim" aria-label="Contact section">
-      <div class="contact-container">
-        <h2>Bagaimana pendapat anda tentang CV Saya??</h2>
-        <p class="contact-subtitle">Tulis kritik dan saran anda di sini</p>
-        <p class="contact-indicator">👇👇👇</p>
-
-        <form action="https://formspree.io/f/mkgvgpea" method="POST" class="contact-form">
-          <div class="form-group">
-            <label for="name">Nama lengkap:</label>
-            <input type="text" id="name" name="name" required>
+      <div class="skills-group">
+        <h3 class="skills-group-title">Markup</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-header">
+              <img src="html.png" class="skill-icon" alt="HTML">
+              <h4>HTML</h4>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
           </div>
-
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+          <div class="skill-card">
+            <div class="skill-header">
+              <img src="css.png" class="skill-icon" alt="CSS">
+              <h4>CSS</h4>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
           </div>
+        </div>
+      </div>
 
-          <div class="form-group">
-            <label for="message">Tulis Pesan:</label>
-            <textarea id="message" name="pesan" required></textarea>
+      <div class="skills-group">
+        <h3 class="skills-group-title">Programming</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-header">
+              <img src="Pyton.png" class="skill-icon" alt="Python">
+              <h4>Python</h4>
+              <span class="skill-pct">20%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:20%"></div></div>
           </div>
-
-          <button type="submit" class="btn-submit">Kirim</button>
-        </form>
+          <div class="skill-card">
+            <div class="skill-header">
+              <img src="js.png" class="skill-icon" alt="JavaScript">
+              <h4>JavaScript</h4>
+              <span class="skill-pct">47%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:47%"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-header">
+              <img src="php.png" class="skill-icon" alt="PHP">
+              <h4>PHP</h4>
+              <span class="skill-pct">35%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:35%"></div></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    
+    <!-- Certificates Section -->
+    <section class="certificates" id="sertifikat">
+      <div class="section-label">04 — Certificates</div>
+      <h2>My Certificate</h2>
+      <div class="cert-grid">
+        <article class="cert-card">
+          <img src="sertifikat dicoding_Page_1.jpg" alt="Dicoding Certificate">
+          <div class="cert-info">
+            <h3>Certificate Dicoding</h3>
+            <a href="sertifikat dicoding_Page_1.jpg" class="cert-link" target="_blank">See full certificate →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="kirim">
+      <div class="section-label">05 — Contact</div>
+      <div class="contact-wrap">
+        <div class="contact-left">
+          <h2>Write Your<br>Criticism &<br>Suggestions</h2>
+          <p class="contact-sub">Got feedback? I'd love to hear it.</p>
+        </div>
+        <form action="https://formspree.io/f/mkgvgpea" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="pesan" required placeholder="Share your thoughts..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message <span>→</span></button>
+        </form>
+      </div>
+
+      <div class="map-wrap">
+        <h3>My Location</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.30815364703477!2d112.7145776804649!3d-7.361692364190093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e30064932061%3A0xce4308100334f59!2sONDE2%20PONDOK%20LEGI!5e0!3m2!1sid!2sid!4v1764742555427!5m2!1sid!2sid"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2024 KENZIE ZUBAIR AL FATIH | PORTFOLIO | SMKN 1 SURABAYA</p>
+    <div class="footer-inner">
+      <span class="footer-logo">KENZ</span>
+      <p class="footer-copy">© <span id="year"></span> Kenzie Zubair Al Fatih — SMKN 1 Surabaya</p>
+    </div>
   </footer>
+
 </body>
 </html>
