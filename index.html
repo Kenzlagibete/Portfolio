@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio Kenzie Zubair Al Fatih - Web Developer">
   <title>Kenzie Zubair — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -19,13 +22,16 @@
         </div>
         <button class="mobile-menu-toggle" aria-label="Toggle menu"><img class="foto-menu" src="Mobile menu.png"></button>
         <ul class="nav-menu">
-          <li><a href="#beranda">Home</a></li>
           <li><a href="#tentang">About</a></li>
-          <li><a href="#projek">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#skill">Skills</a></li>
           <li><a href="#sertifikat">Certificate</a></li>
           <li><a href="#kirim">Contact</a></li>
         </ul>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="id" aria-pressed="false">ID</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
       </div>
     </nav>
   </header>
@@ -35,10 +41,10 @@
     <section class="hero" id="beranda">
       <div class="hero-noise"></div>
       <div class="hero-content">
-        <div class="hero-tag">Available for work 🟢</div>
+        <!-- <div class="hero-tag">Available for work 🟢</div> -->
         <h1>I AM&nbsp;<span class="typewriter"></span></h1>
         <p class="hero-email">kenziezubair@gmail.com</p>
-        <p class="hero-desc">Learning to build the web, one line at a time.</p>
+        <p class="hero-desc">SMK RPL Student who loves Animation & Web Development.</p>
 
         <div class="social-row">
           <a href="https://wa.me/6289677524422" class="social-btn" aria-label="WhatsApp">
@@ -63,8 +69,13 @@
         </a>
       </div>
 
+      <img class="hero-img" src="Profil section.png" alt="Profil section.png">
+
       <div class="hero-scroll">scroll<span class="scroll-line"></span></div>
     </section>
+
+    <!-- Running text -->
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"></div></div>
 
     <!-- About Section -->
     <section class="about" id="tentang">
@@ -83,17 +94,16 @@
             <li><span class="bio-key">Major</span><span class="bio-val">RPL (Rekayasa Perangkat Lunak)</span></li>
             <li><span class="bio-key">Email</span><span class="bio-val">kenziezubair@gmail.com</span></li>
             <li><span class="bio-key">Hobby</span><span class="bio-val">Music · Video editing · Animation</span></li>
-            <li><span class="bio-key">Skills</span><span class="bio-val">HTML · CSS · Graphic Design</span></li>
-            <li><span class="bio-key">Languages</span><span class="bio-val">Indonesia · English</span></li>
+            <li><span class="bio-key">Languages</span><span class="bio-val">Indonesian · English · Javanese</span></li>
             <li><span class="bio-key">Dream</span><span class="bio-val">Game & Web Developer</span></li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projek">
-      <div class="section-label">02 — Projects</div>
+    <!-- Experience Section -->
+    <section class="projects" id="experience">
+      <div class="section-label">02 — EXPERIENCE</div>
       <h2>My Projects</h2>
       <div class="projects-grid">
         <article class="project-card">
@@ -106,8 +116,10 @@
           <div class="project-info">
             <span class="project-tag">Web</span>
             <h3>Form Website</h3>
+            <p>A Testing Form</p>
           </div>
         </article>
+
         <article class="project-card">
           <div class="project-img">
             <img src="Berita.png" alt="News Website">
@@ -118,20 +130,10 @@
           <div class="project-info">
             <span class="project-tag">Web</span>
             <h3>News Website</h3>
+            <p>A website where you can read breaking news and the latest updates.</p>
           </div>
         </article>
-        <article class="project-card">
-          <div class="project-img">
-            <img src="Projek game.png" alt="Box-Jump Game">
-            <div class="project-overlay">
-              <a href="https://scratch.mit.edu/projects/1271948702" class="project-link" target="_blank">View Project →</a>
-            </div>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">Game</span>
-            <h3>Box-Jump Game</h3>
-          </div>
-        </article>
+
         <article class="project-card">
           <div class="project-img">
             <img src="kalkulator.png" alt="Kalkulator">
@@ -142,6 +144,38 @@
           <div class="project-info">
             <span class="project-tag">App</span>
             <h3>Calculator</h3>
+            <p>A Calculator where you can calculate math!</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">
+            <img src="Educhain.jpg" alt="Educhain">
+            <div class="project-overlay">
+              <a href="https://testingcuy.gt.tc/" class="project-link" target="_blank">View Project →</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">App</span>
+            <h3>Educhain</h3>
+            <p>A website to verify your educational documents and diplomas.</p>
+          </div>
+        </article>        
+      </div>
+      
+      <h2>My Games</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-img">
+            <img src="Projek game.png" alt="Box-Jump Game">
+            <div class="project-overlay">
+              <a href="https://scratch.mit.edu/projects/1271948702" class="project-link" target="_blank">View Project →</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Game</span>
+            <h3>Box-Jump Game</h3>
+            <p>A Scratch game inspired by Geometry Dash.</p>
           </div>
         </article>
       </div>
@@ -207,7 +241,7 @@
 
     <!-- Certificates Section -->
     <section class="certificates" id="sertifikat">
-      <div class="section-label">04 — Certificates</div>
+      <div class="section-label">04 — Certificates achievements</div>
       <h2>My Certificate</h2>
       <div class="cert-grid">
         <article class="cert-card">
@@ -217,6 +251,14 @@
             <a href="sertifikat dicoding_Page_1.jpg" class="cert-link" target="_blank">See full certificate →</a>
           </div>
         </article>
+
+          <article class="cert-card">
+          <img src="Sertifikat Aiclass asean.png" alt="AI Class Asean Certificate">
+          <div class="cert-info">
+            <h3>Certificate AI Class Asean</h3>
+            <a href="Sertifikat Aiclass asean.png" class="cert-link" target="_blank">See full certificate →</a>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -224,10 +266,6 @@
     <section class="contact" id="kirim">
       <div class="section-label">05 — Contact</div>
       <div class="contact-wrap">
-        <div class="contact-left">
-          <h2>Write Your<br>Criticism &<br>Suggestions</h2>
-          <p class="contact-sub">Got feedback? I'd love to hear it.</p>
-        </div>
         <form action="https://formspree.io/f/mkgvgpea" method="POST" class="contact-form">
           <div class="form-group">
             <label for="name">Full Name</label>
@@ -242,17 +280,18 @@
             <textarea id="message" name="pesan" required placeholder="Share your thoughts..."></textarea>
           </div>
           <button type="submit" class="btn-submit">Send Message <span>→</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
         </form>
-      </div>
 
-      <div class="map-wrap">
+        <div class="map-wrap">
         <h3>My Location</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.30815364703477!2d112.7145776804649!3d-7.361692364190093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e30064932061%3A0xce4308100334f59!2sONDE2%20PONDOK%20LEGI!5e0!3m2!1sid!2sid!4v1764742555427!5m2!1sid!2sid"
-          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+          width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
       </div>
-    </section>
+      </div>
+</section>
   </main>
 
   <footer>
